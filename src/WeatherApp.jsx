@@ -1,5 +1,6 @@
 import SearchBox from "./SearchBox"
 import InfoBox from "./InfoBox" 
+import Header from "./header"
 import { useState } from "react";
 export default function WeatherApp(){
     const [weather,setWeather] = useState({
@@ -15,10 +16,12 @@ export default function WeatherApp(){
         setWeather(newinfo);
     }
     return (
-        <div>
+        <div> 
             <h2 style={{textAlign:"center"}}>Weather App</h2>
             <SearchBox updateinfo={updateinfo}/> 
             <InfoBox info = {weather}/> 
+            <br /> 
+            <Header name={"Devoloped By Shivang"}/>
         </div>
     )
 }
