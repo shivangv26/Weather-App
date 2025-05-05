@@ -42,7 +42,7 @@ export default function SearchBox({updateinfo}){
         setError(true);
         setTimeout(()=>{
             setError(false)
-        },2000);
+        },1000);
     }
     }
     return (<div className='SearchBox'> 
